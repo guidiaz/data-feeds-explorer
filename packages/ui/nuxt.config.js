@@ -1,6 +1,8 @@
 import { languages } from './constants'
 import { fallbackLocale, defaultLocale } from './default'
 
+console.log('[nuxt.config.js]: API_ENDPOINT = ', process.env.API_ENDPOINT)
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'server',

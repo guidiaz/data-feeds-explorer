@@ -8,6 +8,7 @@ export async function createServer (
   repositories: Repositories
 ): Promise<ApolloServer> {
   return new ApolloServer({
+    cors: false,
     typeDefs: [DIRECTIVES, typeDefs],
     resolvers,
     context: () => repositories
